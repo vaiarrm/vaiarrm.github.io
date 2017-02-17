@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Simple Quiz Using JavaScript</title>
+        <link rel="stylesheet" href="css/main.css">
+
+    </head>
+    <body>
+        <div id = "container">
+            <header>
+                <h1>Simple JavaScript Quiz</h1>
+                <p>Test your knowledge in <strong>JavaScript</strong></p>
+            </header>
+            <section>
+                <div id = "results"></div>
+                <form name = "quizForm" id = "quizForm" onsubmit="return submitAnswers()">
+                    <h3>1. In which HTML element do we put JavaScript code?</h3>
+                    <input type = "radio" name = "q1" value="a" id="q1a">a. &lt;script&gt;<br>
+                    <input type = "radio" name = "q1" value="b" id="q1b">b. &lt;a&gt;<br>
+                    <input type = "radio" name = "q1" value="c" id="q1c">c. &lt;body&gt;<br>
+                    <input type = "radio" name = "q1" value="d" id="q1d">d. &lt;html&gt;<br>
+                    <div id = "q1Error" class = "em"></div>
+
+                    <h3>2. How would you write "hello" in alert box?</h3>
+                    <input type = "radio" name = "q2" value="a" id="q2a">a. conosle.log("Hello")<br>
+                    <input type = "radio" name = "q2" value="b" id="q2b">b. alert("hello")<br>
+                    <input type = "radio" name = "q2" value="c" id="q2c">c. print("hello")<br>
+                    <input type = "radio" name = "q2" value="d" id="q2d">d. document.write("Hello")<br>
+                    <div id = "q2Error" class = "em"></div>
+
+                    <h3>3. JavaScript is directly related to Java?</h3>
+                    <input type = "radio" name = "q3" value="a" id="q3a">a. TRUE<br>
+                    <input type = "radio" name = "q3" value="b" id="q3b">b. FALSE<br>
+                    <div id = "q3Error" class = "em"></div>
+
+                    <h3>4. A varaible in Javascript must start with which special character?</h3>
+                    <input type = "radio" name = "q4" value="a" id="q4a">a. @<br>
+                    <input type = "radio" name = "q4" value="b" id="q4b">b. #<br>
+                    <input type = "radio" name = "q4" value="c" id="q4c">c. $;<br>
+                    <input type = "radio" name = "q4" value="d" id="q4d">d. No Special Character<br>
+                    <div id = "q4Error" class = "em"></div>
+
+                    <h3>5. Which HTML attribute is used to reference an external JavaScript file?</h3>
+                    <input type = "radio" name = "q5" value="a" id="q5a">a. src<br>
+                    <input type = "radio" name = "q5" value="b" id="q5b">b. href<br>
+                    <input type = "radio" name = "q5" value="c" id="q5c">c. rel<br>
+                    <input type = "radio" name = "q5" value="d" id="q5d">d. type<br>
+                    <div id = "q5Error" class = "em"></div>
+                    <br/>
+                    <input type="submit" value="Submit Answers">
+                </form>
+            </section>
+            <footer>
+                <p>Copyright &copy; 2017, ALl Rights Reserved</p>
+            </footer>
+        </div>
+        <script src="js/main.js"></script>
+    </body>
+</html>

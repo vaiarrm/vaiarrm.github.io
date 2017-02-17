@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 14px;
+    font-family: 'Arial', sans-serif;
+    color: whitesmoke;
+    background: darkgray;
+    line-height: 1.6em;
+}
+
+#container{
+
+    width: 980px;
+    margin: 40px;
+    overflow: hidden;
+    /*border: solid;*/
+    /*border-width: 2px;*/
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#slider{
+    width: 940px;
+    height: 350px;
+    position: relative;
+    overflow: hidden;
+    float:left;
+    padding:3px;
+    border:black solid 2px;
+    border-radius: 5px;
+}
+#prev,#next{
+    float: left;
+    margin-top: 130px ;
+    cursor: pointer;
+    position: relative;
+    z-index: -1;
+}
